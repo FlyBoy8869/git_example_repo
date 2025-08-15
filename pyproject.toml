@@ -1,0 +1,24 @@
+[project]
+name = "git-example-repo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Charles Cognato", email = "charlescognato@gmail.com" }
+]
+requires-python = ">=3.13.6"
+dependencies = [
+    "loguru>=0.7.3",
+]
+
+[project.scripts]
+git-example-repo = "git_example_repo:main"
+
+[build-system]
+requires = ["uv_build>=0.8.11,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "icecream>=2.1.6",
+]

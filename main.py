@@ -1,1 +1,6 @@
-print("Hello from main.py")
+def main():
+	print("Hello from main function.")
+
+
+if __name__ == '__main__':
+	
